@@ -207,7 +207,8 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:textStyle="italic"
                 android:typeface="normal"
-                android:fontFamily="casual" />
+                android:fontFamily="casual"
+                android:textSize="18sp" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"

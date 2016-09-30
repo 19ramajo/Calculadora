@@ -181,9 +181,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     punto=false;
                     break;
                 case R.id.Bgrabar:
-                    guardado=pantalla.getText();
-                    pantalla.setText("");
-                    punto=false;
+                    if(pantalla.getText().equals("")){
+                        pantalla.setText("No hay datos");
+                    }else {
+                        guardado = pantalla.getText();
+                        pantalla.setText("");
+                        punto = false;
+                    }
                     break;
                 case R.id.Bmemoria:
                     pantalla.setText(guardado);
